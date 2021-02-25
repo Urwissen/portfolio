@@ -18,8 +18,9 @@ body{
 }
 
 .section-title {
-  margin-left: 2rem;
-  font-size: 3rem;
+  margin: 3rem;
+  font-size: 2rem;
+  text-align: center;
 }
 
 /* colors */
@@ -51,10 +52,11 @@ body{
   align-items: center;
 }
 
-.bi-stack { 
+.fa-layer-group { 
   font-size: 4rem;
-  margin: 2rem;
-  margin-right: 4rem;
+  margin: 4rem;
+  margin-right: 1.5rem;
+  color: var(--main-black-color);
 }
 
 .head-title {
@@ -165,18 +167,18 @@ body{
 .gaming {
   display: grid;
   width: 80%;
-  grid-column: 2/ 8; 
-  grid-row: 2 / 12;
+  grid-column: 1/ 10; 
+  grid-row: 3 / 12;
   margin: 0;
-  opacity: 0.2;
+  opacity: 0.02;
   transform: rotate(10deg);
 }
 
 
 .bio {
   display: grid;
-  grid-column: 6 / 11; 
-  grid-row: 4 / 12;
+  grid-column: 2 / 11; 
+  grid-row: 2 / 12;
   font-size: 1.7rem;
   letter-spacing: 0.02rem;
   z-index: 1;
@@ -247,7 +249,7 @@ body{
 
 .skill-card {
   text-align: center;
-  margin: 2rem 4rem;
+  margin: 2rem 3rem;
   max-width: 180px;
   transition: transform 0.5s ease-in-out;
 }
@@ -314,12 +316,12 @@ body{
 
 .fa-rebel {
   color: #ff414d;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .copyright {
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   margin-bottom: 1rem;
   letter-spacing: 0.1rem;
 }

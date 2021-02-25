@@ -5,7 +5,7 @@ import {ProjectCard} from './ProjectCard'
 export const Main = (params) => {
     return(
         <main className="main container">
-            <h2 className="section-title">About me</h2>
+            {/*<h2 className="section-title">About me</h2>*/}
             <article className="about">
                 <img className="me" src={me} alt="This is me, Lars" />
                 <div className="bio">
@@ -59,7 +59,7 @@ export const Main = (params) => {
                 <div className="skill-card">
                 <i class="fab fa-css3-alt" aria-hidden="true"></i> 
                     <h3>CSS</h3>
-                    <p><em>bring things together!</em></p>  
+                    <p><em>styling is everything!</em></p>  
                 </div>
 
                 <div className="skill-card">
@@ -71,7 +71,7 @@ export const Main = (params) => {
                 <div className="skill-card">
                     <i class="fab fa-react"></i> 
                     <h3>React</h3>
-                    <p><em>scalable, fast, multi-platform</em></p>  
+                    <p><em>scalable, fast, just the modern way!</em></p>  
                 </div>
             </article>
             

@@ -4,8 +4,8 @@ export const Header = (params) => {
     return (
         <header className="header container">
             <div className="logo">
-            <i class="bi bi-stack"></i>
-            <h1 className="head-title">Lars Gessner</h1>
+            <i class="fas fa-layer-group"></i>
+            {/*<h1 className="head-title">Lars Gessner</h1>*/}
             </div>
             <nav className="head-navbar">
                 <a className="nav-link" href="/about">About</a>
