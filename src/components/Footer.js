@@ -1,7 +1,7 @@
 export const Footer = (params) => {
     return(
         <footer className="footer container">
-            <i class="fas fa-arrow-up"></i>
+            <a href="#top"><i class="fas fa-arrow-up"></i></a>
             <div className="contact-container">
             <h3>Contact</h3>
                 <i class="bi bi-github"></i>

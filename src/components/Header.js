@@ -2,7 +2,7 @@
 
 export const Header = (params) => {
     return (
-        <header className="header container">
+        <header className="header container" id="top">
             <div className="logo">
             <i class="fas fa-layer-group"></i>
             {/*<h1 className="head-title">Lars Gessner</h1>*/}

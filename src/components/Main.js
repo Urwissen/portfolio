@@ -1,6 +1,8 @@
 import me from "./me2.png"
 import gaming from "./gaming.png"
 import {ProjectCard} from './ProjectCard'
+import {Skills} from "./Skills"
+import {Achievements} from "./Achievements"
 
 export const Main = (params) => {
     return(
@@ -12,8 +14,8 @@ export const Main = (params) => {
                 <p><span className="bio-hi">Hi there,</span>
                 <br></br>
                 <br></br>
-                you want to use digitization for your own <strong>benefit</strong>, <strong>chance</strong>, more <strong>profits</strong>! All possibilities can be created for you.</p> 
-                <button className="about-btn">My Work</button>
+                you want to use digitization for your own <strong>benefit</strong>, <strong>chance</strong>, more <strong>profits</strong>? All possibilities can be created for you!</p> 
+                <button className="about-btn">my work</button>
                 </div>
                 
                 <img className="gaming" src={gaming} alt="some art" /> 
@@ -43,37 +45,11 @@ export const Main = (params) => {
             </article>
 
             <h2 className="section-title">Skills</h2>
-            <article className="skills-container">
-                <div className="skill-card">
-                    <i class="fab fa-sketch"></i> 
-                    <h3>UI-UX</h3>
-                    <p><em>the color and shape, shows the path</em></p>  
-                </div>
 
-                <div className="skill-card">
-                    <i class="fab fa-html5" aria-hidden="true"></i> 
-                    <h3>HTML</h3>
-                    <p><em>basic architecture and accesebility</em></p>  
-                </div>
+            <Skills />
 
-                <div className="skill-card">
-                <i class="fab fa-css3-alt" aria-hidden="true"></i> 
-                    <h3>CSS</h3>
-                    <p><em>styling is everything!</em></p>  
-                </div>
-
-                <div className="skill-card">
-                    <i class="fab fa-js-square"></i> 
-                    <h3>JavaScript</h3>
-                    <p><em>interactivity for you</em></p>  
-                </div>
-
-                <div className="skill-card">
-                    <i class="fab fa-react"></i> 
-                    <h3>React</h3>
-                    <p><em>scalable, fast, just the modern way!</em></p>  
-                </div>
-            </article>
+            <h2 className="section-title">Achievements</h2>
+            <Achievements />
             
 
         </main>

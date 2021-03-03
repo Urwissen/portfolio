@@ -169,7 +169,7 @@ body{
 }
 
 .me:hover {
-  transform: rotate(365deg);
+  transform:scale(1.1);
   cursor: pointer;
 }
 
@@ -237,11 +237,12 @@ body{
   border-radius: 20px 20px 0px 0px;
   margin: 0;
   filter: grayscale(1);
-  transition: filter 0.5 ease;
+  transition: filter 0.5s ease, height 0.5s ease;
 }
 
 .project-card img:hover {
   filter: none;
+  height: 90%;
 }
 
 
@@ -298,6 +299,12 @@ body{
 
 .fa-react:hover {
   color: #00bcd4;
+}
+
+/* achievements */
+
+.achievements {
+  background-color: var(--main-bg-color)
 }
 
 /* footer styling */
