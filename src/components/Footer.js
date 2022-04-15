@@ -1,6 +1,6 @@
-export const Footer = (params) => {
+export const Footer = (props) => {
     return(
-        <footer className="footer container">
+        <footer className={`footer container ${props.darkMode}`}>
             <a href="#top"><i class="fas fa-arrow-up"></i></a>
             <div className="contact-container">
             <h3>Contact</h3>

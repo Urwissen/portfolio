@@ -37,6 +37,9 @@ body{
   --second-contrast-color: #14274e;
   --main-black-color: #1c2b2d;
   --main-white-color: #f4f4f2;
+
+  --darkmode-main-bg-color: rgb(22, 22, 22);
+  --darkmode-second-bg-color: rgb(73, 73, 73);
 }
 
 /* header styling */
@@ -51,6 +54,10 @@ body{
   z-index: 5;
 }
 
+.header.dark {
+  background-color: var(--darkmode-main-bg-color)
+}
+
 .logo {
   display: flex;
   flex-direction: row;
@@ -63,6 +70,11 @@ body{
   margin-right: 1.5rem;
   color: var(--main-black-color);
 }
+
+.header.dark .fa-layer-group {
+  color: var(--main-white-color);
+}
+
 
 .head-title {
   justify-self: flex-start;
@@ -88,6 +100,10 @@ body{
   transition: color 0.3s ease-in-out;
 }
 
+.header.dark .nav-link  {
+  color: var(--main-white-color);  
+}
+
 .nav-link:hover {
   color: #c56183;
   text-decoration: underline;
@@ -108,9 +124,14 @@ body{
   background-color: var(--second-bg-color);
   padding: 0.4rem;
   border-radius: 1rem;
+  cursor: pointer;
 }
 
 .fa-sun {
+  color: var(--main-bg-color);
+  margin-right: 0.7rem;
+}
+.fa-sun.isActive{
   color: #ffcb8e;
   margin-right: 0.7rem;
 }
@@ -119,9 +140,16 @@ body{
   color: var(--main-bg-color);
   margin-right: 0.7rem;
 }
+.fa-moon.isActive {
+  color: rgb(36, 36, 119);
+  margin-right: 0.7rem;
+}
 
 .fa-star {
   color: var(--main-bg-color);
+}
+.fa-star.isActive {
+  color: palevioletred;
 }
 
 

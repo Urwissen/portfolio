@@ -4,9 +4,9 @@ import {ProjectCard} from './ProjectCard'
 import {Skills} from "./Skills"
 import {Achievements} from "./Achievements"
 
-export const Main = (params) => {
+export const Main = (props) => {
     return(
-        <main className="main container">
+        <main className={`main container ${props.darkMode}`}>
             {/*<h2 className="section-title">About me</h2>*/}
             <article className="about">
                 <img className="me" src={me} alt="This is me, Lars" />
