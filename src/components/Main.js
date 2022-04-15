@@ -1,4 +1,4 @@
-import me from "./me2.png"
+import me from "./me.png"
 import gaming from "./gaming.png"
 import {ProjectCard} from './ProjectCard'
 import {Skills} from "./Skills"

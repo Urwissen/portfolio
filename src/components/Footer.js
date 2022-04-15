@@ -10,7 +10,7 @@ export const Footer = (params) => {
                 <i class="bi bi-geo-alt-fill"></i>
             </div>
             <aside class="copyright">Build with the <i class="fa fa-rebel" aria-hidden="true"></i> in Stuttgart</aside>
-         </footer> 
+        </footer> 
     )      
 }
 

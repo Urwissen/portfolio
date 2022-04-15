@@ -11,11 +11,11 @@ export function ProjectCard({url, title, description}) {
     }
 
 
-   return(
-    <div className={"project-card"}>
-        <img className="project-card--img" src={url} alt="a project" onMouseOver={handleEvent}></img>
-        <h3 className="project-card--title">{title}</h3>
-        <p className="project-card--desc">{description}</p>
-    </div>
-   ) 
+    return(
+        <div className={"project-card"}>
+            <img className="project-card--img" src={url} alt="a project" onMouseOver={handleEvent}></img>
+            <h3 className="project-card--title">{title}</h3>
+            <p className="project-card--desc">{description}</p>
+        </div>
+    ) 
 }
