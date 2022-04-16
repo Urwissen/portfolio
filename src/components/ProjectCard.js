@@ -16,6 +16,10 @@ export function ProjectCard({url, title, description}) {
             <img className="project-card--img" src={url} alt="a project" onMouseOver={handleEvent}></img>
             <h3 className="project-card--title">{title}</h3>
             <p className="project-card--desc">{description}</p>
+            <div className="wrapper">
+                <i className="bi bi-github" onClick={()=> window.open("https://github.com/Urwissen", "_blank")}></i>
+                <i className="bi bi-globe" onClick={()=> window.open("https://github.com/Urwissen", "_blank")}></i>
+            </div>
         </div>
     ) 
 }

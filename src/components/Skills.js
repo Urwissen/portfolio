@@ -29,7 +29,8 @@ export const Skills = (params) => {
                     <i class="fab fa-react"></i> 
                     <h3>React</h3>
                     <p><em>scalable, fast, just the modern way!</em></p>  
-                </div> 
+                </div>
+
             </div>
     )    
 };

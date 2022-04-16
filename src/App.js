@@ -3,7 +3,6 @@ import './App.css';
 import {Header} from './components/Header.js';
 import {Main} from './components/Main.js';
 import {Footer} from './components/Footer.js';
-import Confetti from 'react-confetti'
 
 function App() {
   const [darkMode, setDarkMode] = React.useState("")
@@ -23,8 +22,7 @@ function App() {
       }
           
   }
-  //  run={darkMode === "rainbow" ? "true" : "false"}
-  // const { width, height } = useWindowSize()
+
   return (
     <div className="App">
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
