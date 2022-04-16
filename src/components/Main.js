@@ -1,4 +1,6 @@
-import me from "./me.png"
+import me from "./me.jpg"
+import meDark from "./me-dark.jpg"
+import meRainbow from "./me-rainbow.jpg"
 import gaming from "./gaming.png"
 import {ProjectCard} from './ProjectCard'
 import {Skills} from "./Skills"
@@ -9,7 +11,7 @@ export const Main = (props) => {
         <main className={`main container ${props.darkMode}`}>
             {/*<h2 className="section-title">About me</h2>*/}
             <article className="about">
-                <img className="me" src={me} alt="This is me, Lars" />
+                <img className="me" src={props.darkMode === "dark" ? meDark : props.darkMode === "rainbow" ? meRainbow : me} alt="This is me, Lars" />
                 <div className="bio">
                 <p><span className="bio-hi">Hi there,</span>
                 <br></br>
