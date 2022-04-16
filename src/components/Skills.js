@@ -1,6 +1,6 @@
 export const Skills = (params) => {
     return(
-            <article className="skills-container">
+            <div className="skills-container">
                 <div className="skill-card">
                     <i class="fab fa-sketch"></i> 
                     <h3>UI-UX</h3>
@@ -30,6 +30,6 @@ export const Skills = (params) => {
                     <h3>React</h3>
                     <p><em>scalable, fast, just the modern way!</em></p>  
                 </div> 
-            </article>
+            </div>
     )    
 };

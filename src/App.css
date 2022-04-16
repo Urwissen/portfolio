@@ -10,13 +10,11 @@ body{
   font-family: 'Public Sans', sans-serif;
   font-size: 16px;
   background-color: var(--main-bg-color);
-
 }
-
 
 .App {
   border: 1px solid black;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -258,6 +256,9 @@ body{
   transform: rotate(10deg);
 }
 
+.main.dark .gaming {
+  filter: invert(1);
+}
 
 .bio {
   display: grid;
@@ -266,7 +267,7 @@ body{
   font-size: 1.7rem;
   letter-spacing: 0.02rem;
   z-index: 1;
-  
+  max-width: 750px;
 }
 
 .bio p{
@@ -294,6 +295,10 @@ body{
   color: var(--rainbow-main-bg-color)
 }
 
+article {
+  max-width: 1800px;
+  margin: 0 auto;
+}
 /* Projects */
 .projects-container {
   display: flex;

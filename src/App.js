@@ -1,13 +1,14 @@
-import React from "react";
+import React, {useWindowSize} from "react";
 import './App.css';
 import {Header} from './components/Header.js';
 import {Main} from './components/Main.js';
 import {Footer} from './components/Footer.js';
+import Confetti from 'react-confetti'
 
 function App() {
   const [darkMode, setDarkMode] = React.useState("")
   const [round, setRound] = React.useState(0)
-  console.log(darkMode)
+  
   function toggleDarkMode() {
       if (!darkMode) {
           setDarkMode(prev => "dark")    
@@ -22,6 +23,8 @@ function App() {
       }
           
   }
+  //  run={darkMode === "rainbow" ? "true" : "false"}
+  // const { width, height } = useWindowSize()
   return (
     <div className="App">
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
@@ -30,5 +33,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
