@@ -1,4 +1,4 @@
-export function ProjectCard({url, title, description}) {
+export function ProjectCard({image, title, description, github, demo}) {
     const card = document.getElementById("project-card")
     const cardImg = document.getElementById("project-card--img")
     const cardTitle = document.getElementById("project-card--title")
@@ -13,12 +13,12 @@ export function ProjectCard({url, title, description}) {
 
     return(
         <div className={"project-card"}>
-            <img className="project-card--img" src={url} alt="a project" onMouseOver={handleEvent}></img>
+            <img className="project-card--img" src={image} alt="a project" onMouseOver={handleEvent}></img>
             <h3 className="project-card--title">{title}</h3>
             <p className="project-card--desc">{description}</p>
             <div className="wrapper">
-                <i className="bi bi-github" onClick={()=> window.open("https://github.com/Urwissen", "_blank")}></i>
-                <i className="bi bi-globe" onClick={()=> window.open("https://github.com/Urwissen", "_blank")}></i>
+                <i className="bi bi-github" onClick={()=> window.open(github, "_blank")}></i>
+                <i className="bi bi-globe" onClick={()=> window.open(demo, "_blank")}></i>
             </div>
         </div>
     ) 

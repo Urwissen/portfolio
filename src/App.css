@@ -238,7 +238,7 @@ body{
   transform: rotate(8deg);
   margin: 1rem;
   z-index: 0;
-  transition: transform 1s;
+  transition: all 1s;
 }
 
 .me:hover {
@@ -314,31 +314,33 @@ article {
   width: 250px;
   height: 400px;
   background-color: var(--main-bg-color);
-  transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
-  margin: 1rem;
+  transition: all 0.6s ease-in-out;
+  margin: 4rem 2rem;
   border-radius: 20px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .project-card:hover {
   background-color: var(--second-bg-color);
   color: var(--main-bg-color);
   transform: scale(1.5) rotate(1deg);
-  cursor: pointer;
+  z-index: 2;
 }
 
 .project-card img {
   width: 100%;
-  height: 85%;
+  min-height: 85%;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
   margin: 0;
   filter: grayscale(0.2);
-  transition: filter 0.5s ease, height 0.5s ease;
+  transition: all 0.6s ease-in-out;
 }
 .project-card--desc {
   display: none;
+  margin: 0 auto;
 }
 
 .project-card .bi {
@@ -354,10 +356,15 @@ article {
 
 .project-card:hover > .project-card--desc {
   display: flex;
+  max-width: 90%;
 }
 
 .project-card:hover > img {
+  min-height: 0;
   height: 35%;
+  transform: scale(1.35);
+  object-position: center;
+  margin-bottom: 1em;
 }
 
 .project-card .bi:hover{
@@ -499,4 +506,20 @@ article {
 
 .bi:hover {
   transform: scale(1.1);
+}
+
+
+/* Breakpoints */
+
+@media screen and (max-width: 900px)  {
+  .me {
+    width: 150px;
+    height: 150px;
+  }  
+  .about-btn {
+    margin-top: 1em;
+  }
+  .project-card:hover {
+    transform: scale(1.5);
+  }
 }

@@ -28,22 +28,54 @@ export const Main = (props) => {
             <article className="projects-container">
                 
                 <ProjectCard 
-                    url="https://images.pexels.com/photos/5324967/pexels-photo-5324967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940}"
-                    title="Some Project 1"
-                    description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
+                    image="https://live.staticflickr.com/65535/52007875353_20a20c7442_b.jpg"
+                    title="Digital Business Card"
+                    description="Get a figma file and rebuild it in React"
+                    github="https://github.com/Urwissen/digital-business-card"
+                    demo="https://digital-business-card-six.vercel.app/"
                 />
 
                 <ProjectCard 
-                    url="https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" 
-                    title="Some Project 2"
-                    description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
+                    image="https://live.staticflickr.com/65535/52006806577_3b2d6940e1_b.jpg" 
+                    title="Minimal todo app"
+                    description="Ceare a minimal todo-app with react. Using statemanagement, hooks to remove, add and highlight tasks."
+                    github="https://github.com/Urwissen/minimal-todo"
+                    demo="https://minimal-todo-olive.vercel.app"
                 />
 
                 <ProjectCard 
-                    url="https://images.pexels.com/photos/3861964/pexels-photo-3861964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                    title="Some Project 3"
-                    description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt"
+                    image="https://live.staticflickr.com/65535/52008080819_9973ee876f_b.jpg"
+                    title="Quiz Game"
+                    description="A basic quiz game using Typescript and React."
+                    github="https://github.com/Urwissen/quiz-game"
+                    demo="https://react-typescript-quiz-game.vercel.app"
                 />
+
+                <ProjectCard 
+                    image="https://live.staticflickr.com/65535/52007903508_ae790b2603_b.jpg"
+                    title="Beautiful Form"
+                    description="A form project with WCAG in mind."
+                    github="https://github.com/Urwissen/form-project"
+                    demo="https://form-project-alpha.vercel.app"
+                />
+
+                <ProjectCard 
+                    image="https://live.staticflickr.com/65535/52007913658_0b2ddf16fc_b.jpg"
+                    title="Portfolio 1.0"
+                    description="My first portfolio site. Using React, hooks & state-management, Bootstrap icons, and my lovly 3 color theme slider! All from scratch, with lots of ducktape! "
+                    github="https://github.com/Urwissen"
+                    demo="https://github.com/Urwissen"
+                />
+
+                <ProjectCard 
+                    image="https://live.staticflickr.com/65535/52008108314_93df243b4f_b.jpg"
+                    title="Unit Converter"
+                    description="A pure vanilla javascript unit converter"
+                    github="https://github.com/Urwissen/unit-converter"
+                    demo="https://unit-converter-eight.vercel.app"
+                />
+
+
             </article>
 
             <h2 className="section-title">Skills</h2>
