@@ -16,7 +16,7 @@ export const Skills = (params) => {
                 <div className="skill-card">
                 <i class="fab fa-css3-alt" aria-hidden="true"></i> 
                     <h3>CSS</h3>
-                    <p><em>styling is everything!</em></p>  
+                    <p><em>styling is everything</em></p>  
                 </div>
 
                 <div className="skill-card">
@@ -28,7 +28,13 @@ export const Skills = (params) => {
                 <div className="skill-card">
                     <i class="fab fa-react"></i> 
                     <h3>React</h3>
-                    <p><em>scalable, fast, just the modern way!</em></p>  
+                    <p><em>scalable, fast, just the modern way</em></p>  
+                </div>
+
+                <div className="skill-card">
+                    <i class="fab fa-redux"></i> 
+                    <h3>Redux</h3>
+                    <p><em>Scalabe state management, without a nested object hell</em></p>  
                 </div>
 
             </div>

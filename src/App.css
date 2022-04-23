@@ -64,20 +64,38 @@ body{
   background-color: var(--rainbow-main-bg-color)
 }
 
-.logo {
+.logo-box {
   display: flex;
-  flex-direction: row;
+/*   flex-direction: row; */
   align-items: center;
 }
 
-.fa-layer-group { 
+.logo-icon{ 
   font-size: 4rem;
-  margin: 4rem;
+  margin-left: 4rem;
   margin-right: 1.5rem;
   color: var(--main-black-color);
+
+  align-self: center;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  transform-origin: bottom;
+  animation-timing-function: cubic-bezier(0.300, 0.700, 0.400, 1);
+  animation-delay: 2s;
+  animation-name: bounce-7;
 }
 
-.header.dark .fa-layer-group {
+@keyframes bounce-7 {
+  0%   { transform: scale(1,1)      translateY(0); }
+  10%  { transform: scale(1.1,.9)   translateY(0); }
+  30%  { transform: scale(.9,1.1)   translateY(-50px); }
+  50%  { transform: scale(1.05,.95) translateY(0); }
+  57%  { transform: scale(1,1)      translateY(-10px); }
+  64%  { transform: scale(1,1)      translateY(0); }
+  100% { transform: scale(1,1)      translateY(0); }
+}
+
+.header.dark .logo-icon {
   color: var(--main-white-color);
 }
 
@@ -92,7 +110,7 @@ body{
 
 /* navbar */
 .head-navbar {
-  margin-top: 4rem;
+  margin-top: 5.5rem;
   justify-self: flex-end;
 }
 
@@ -104,6 +122,14 @@ body{
   letter-spacing: 0.1rem;
   margin-right: 3rem;
   transition: color 0.3s ease-in-out;
+}
+
+.burger {
+  display: none;
+}
+
+.burger-navbar {
+  display: none;
 }
 
 .header.dark .nav-link  {
@@ -129,12 +155,12 @@ body{
 }
 
 /* theme switch */
-.theme {
-  margin-top: 8rem;
+.theme-switcher {
+  margin-top: 9rem;
   position: absolute;
   right: 3rem;
   font-size: 1.5rem;
-  background-color: var(--second-bg-color);
+  background-color: var(--main-black-color);
   padding: 0.4rem;
   border-radius: 1rem;
   cursor: pointer;
@@ -311,7 +337,7 @@ article {
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 250px;
+  max-width: 250px;
   height: 400px;
   background-color: var(--main-bg-color);
   transition: all 0.6s ease-in-out;
@@ -325,7 +351,7 @@ article {
 .project-card:hover {
   background-color: var(--second-bg-color);
   color: var(--main-bg-color);
-  transform: scale(1.5) rotate(1deg);
+  transform: scale(1.4) rotate(1deg);
   z-index: 2;
 }
 
@@ -511,15 +537,95 @@ article {
 
 /* Breakpoints */
 
-@media screen and (max-width: 900px)  {
+@media (max-width: 950px){
+  .theme-switcher {
+    margin-top: 3.5em;
+  }
+
   .me {
-    width: 150px;
-    height: 150px;
-  }  
+    width: 100px;
+    height: 100px;
+  } 
   .about-btn {
     margin-top: 1em;
   }
+
+  .projects-container {
+
+  }
+
+  .head-navbar {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+    position: fixed;
+    bottom: 1em;
+    background-color: #e643f8;
+    padding: 0.5em;
+    right: 1em;
+    border-radius: 1em;
+    align-self: center;
+    font-size: 2em;
+    z-index: 10;
+  }
+
+  .burger:hover {
+    transform: scale(1.1);
+    text-decoration: none;
+  }
+
+  .burger-navbar {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: black;
+    opacity: 0.9;
+    z-index: 9;
+  }
+  
+  .nav-link {
+    margin: 0;
+  }
+
+  .burger-navbar a {
+    font-size: 4rem;
+  }
+
+  .burger-navbar:nth-last-child(1) {
+    margin-bottom: 1em;
+  }
+
   .project-card:hover {
     transform: scale(1.5);
+  }
+
+  .skills-container {
+    justify-content: center;
+  }
+
+  .skill-card {
+
+  }
+
+  .contact-container {
+    flex-direction: column;
+    justify-content: center;;
+  }
+
+  .contact-container i {
+    margin: 0.25em;
+  }
+
+  .fa-arrow-up {
+    margin-top: 1.38em;
+  }
+
+  .footer aside {
+    margin: 1em;
   }
 }
