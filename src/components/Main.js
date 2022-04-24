@@ -13,11 +13,14 @@ export const Main = (props) => {
             <article className="about">
                 <img className="me" src={props.darkMode === "dark" ? meDark : props.darkMode === "rainbow" ? meRainbow : me} alt="This is me, Lars" />
                 <div className="bio">
-                <p><span className="bio-hi">Hi there,</span>
-                <br></br>
-                <br></br>
-                you want to use digitization for your own <strong>benefit</strong>, <strong>chance</strong>, more <strong>profits</strong>? All possibilities can be created for you!</p> 
-                <button className="about-btn">hire me!</button>
+                    <p><span className="bio-hi">Hi there,</span>
+                    <br></br>
+                    <br></br>
+                    my name is  <span className="highlight">Lars</span>. A self taught <span className="highlight">front-end developer</span> from Germany. If you want to use digitization for your own <strong>benefit</strong>, <strong>chance</strong>, more <strong>profits</strong>? All possibilities can be created for you!</p> 
+                    <div className="flex">
+                        <button className="action-btn">hire me!</button>
+                        <button className="action-btn cv"><i class="bi bi-file-earmark-person"></i></button>
+                    </div>
                 </div>
                 
                 <img className="gaming" src={gaming} alt="some art" /> 

@@ -11,7 +11,7 @@ export const Header = (props) => {
             {/* <i className="fas fa-layer-group logo-icon"></i> */}
             {/*<h1 className="head-title">Lars Gessner</h1>*/}
             </div>
-            
+            {/* 
             <i className="nav-link bi bi-list burger" onClick={(event) => {
                 const mobileNav = document.querySelector(".burger-navbar")
                 mobileNav.style.display = isOpen ? "none" :"flex"
@@ -29,7 +29,7 @@ export const Header = (props) => {
                 <a className="nav-link" href="/skills">Skills</a>
                 <a className="nav-link" href="/contact">Contact</a>
 
-            </nav>
+            </nav> */}
             <ThemeSwitcher darkMode={props.darkMode} toggleDarkMode={props.toggleDarkMode}/>
         </header> 
     )
