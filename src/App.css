@@ -416,6 +416,7 @@ article {
   margin: 2rem 3rem;
   max-width: 180px;
   transition: transform 0.5s ease-in-out;
+  cursor: default;
 }
 
 .skill-card:hover {
