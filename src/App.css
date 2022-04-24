@@ -674,6 +674,38 @@ article {
 }
 
 
+/* Popup box, call to actions */
+.popup-box {
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 80vw;
+  height: 80vw;
+  position: fixed;
+  left: 10vw;
+  right: 10vw;
+  top: 10vh;
+  bottom: 10vh;
+  background-color: black;
+  color: whitesmoke;
+  opacity: 0.9;
+  z-index: 8;
+  transition: all 1s ease-in-out;
+  border-radius: 1em;
+}
+
+.popup-box::after {
+  transform: scale(1.05);
+}
+
+@keyframes popup {
+  0%   { transform: scale(1,0)  }
+  50%  { transform: scale(1.05)}
+  100% { transform: scale(1,1) }  
+}
+
 /* Breakpoints */
 
 @media (max-width: 950px){

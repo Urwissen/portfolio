@@ -1,3 +1,5 @@
+import React from "react"
+
 import me from "./me.jpg"
 import meDark from "./me-dark.jpg"
 import meRainbow from "./me-rainbow.jpg"
@@ -5,11 +7,22 @@ import gaming from "./gaming.png"
 import {ProjectCard} from './ProjectCard'
 import {Skills} from "./Skills"
 import {Achievements} from "./Achievements"
+import PopupBox from "./PopupBox"
 
 export const Main = (props) => {
+    const [isOpen, setIsOpen] = React.useState(false)
+    const [content, setContent]  = React.useState("hire")
+
+    function handlePopup(event, action) {
+        console.log(action)
+        action !== "close" && setContent(prev => action === "hire" ? "hire" : "cv")
+        setIsOpen(prev => !prev)    
+    }
+
     return(
         <main className={`main container ${props.darkMode}`}>
             {/*<h2 className="section-title">About me</h2>*/}
+            {isOpen ? <PopupBox handlePopup={handlePopup} content={content}/> : null}
             <article className="about">
                 <img className="me" src={props.darkMode === "dark" ? meDark : props.darkMode === "rainbow" ? meRainbow : me} alt="This is me, Lars" />
                 <div className="bio">
@@ -18,8 +31,8 @@ export const Main = (props) => {
                     <br></br>
                     my name is  <span className="highlight">Lars</span>. A self taught <span className="highlight">front-end developer</span> from Germany. If you want to use digitization for your own <strong>benefit</strong>, <strong>chance</strong>, more <strong>profits</strong>? All possibilities can be created for you!</p> 
                     <div className="flex">
-                        <button className="action-btn">hire me!</button>
-                        <button className="action-btn cv"><i className="bi bi-file-earmark-person"></i></button>
+                        <button className="action-btn" onClick={(event) => handlePopup(event, "hire")}>hire me!</button>
+                        <button className="action-btn cv" onClick={(event) => handlePopup(event, "cv")}><i className="bi bi-file-earmark-person"></i></button>
                     </div>
                 </div>
                 
@@ -56,7 +69,7 @@ export const Main = (props) => {
 
                 <ProjectCard 
                     image="https://live.staticflickr.com/65535/52007903508_ae790b2603_b.jpg"
-                    title="Beautiful Form"
+                    title="Accessible Form"
                     description="A form project with WCAG in mind."
                     github="https://github.com/Urwissen/form-project"
                     demo="https://form-project-alpha.vercel.app"
