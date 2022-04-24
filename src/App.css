@@ -618,6 +618,14 @@ article {
   padding: 0 1rem;
 }
 
+.contact-container .impressum {
+  justify-self: flex-end;
+  margin-left: auto;
+  font-weight: normal;
+  font-size: 1.25rem;
+  margin-right: 1em;
+  cursor: pointer;
+}
 
 .fa-rebel {
   color: #ff414d;
@@ -626,6 +634,10 @@ article {
 
 .footer.rainbow .fa-rebel {
   color: var(--rainbow-second-bg-color)
+}
+
+.impressum-text {
+  margin: 2em;
 }
 
 .copyright {
