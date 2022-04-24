@@ -1,5 +1,6 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
 
+
 html {
   scroll-behavior: smooth;
 }
@@ -122,6 +123,7 @@ body{
   letter-spacing: 0.1rem;
   margin-right: 3rem;
   transition: color 0.3s ease-in-out;
+  user-select: none;
 }
 
 .burger {
@@ -164,6 +166,7 @@ body{
   padding: 0.4rem;
   border-radius: 1rem;
   cursor: pointer;
+  user-select: none;
 }
 
 .fa-sun {
@@ -227,6 +230,7 @@ body{
   color: var(--main-bg-color);
   border: none;
   transition: transform 0.5s ease-in-out;
+  user-select: none;
 }
 
 .main.dark .about-btn {
@@ -265,6 +269,7 @@ body{
   margin: 1rem;
   z-index: 0;
   transition: all 1s;
+  user-select: none;
 }
 
 .me:hover {
@@ -425,7 +430,11 @@ article {
 
 .skill-card i {
   font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
 }
+
 
 .skill-card h3 {
   margin-top: 1rem;
@@ -456,11 +465,56 @@ article {
   color: #00bcd4;
 }
 
+.skill-card:hover > i .redux {
+  fill: #bf00d4;
+}
+
 /* achievements */
+.achievement-card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--main-bg-color);
+  margin-bottom: 4em;
+}
 
 .achievements {
-  background-color: var(--main-bg-color)
+  background-color: var(--main-bg-color);
+  width: 380px;
+  height: 500px;
+  border-radius: 1em;
+  margin: 1em;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  overflow: none;
 }
+
+.achievement-card-wrapper.dark {
+  background-color: var(--darkmode-main-bg-color)
+}
+
+.achievement-card-wrapper.rainbow {
+  background-color: var(--rainbow-second-bg-color)
+}
+
+.achievements iframe {
+  border-radius: 1em;
+  width: 100%;
+  height: 80%;
+  border: none;
+}
+
+.achievements h3 {
+  text-align: center;
+}
+
+
+.achievements-stats {
+  margin: 0 2em;
+  font-size: 1.2rem;
+}
+
+
 
 /* footer styling */
 .footer {

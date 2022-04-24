@@ -17,7 +17,7 @@ export const Main = (props) => {
                 <br></br>
                 <br></br>
                 you want to use digitization for your own <strong>benefit</strong>, <strong>chance</strong>, more <strong>profits</strong>? All possibilities can be created for you!</p> 
-                <button className="about-btn">my work</button>
+                <button className="about-btn">hire me!</button>
                 </div>
                 
                 <img className="gaming" src={gaming} alt="some art" /> 
@@ -83,7 +83,7 @@ export const Main = (props) => {
             <Skills />
 
             <h2 className="section-title">Achievements</h2>
-            <Achievements />
+            <Achievements darkMode={props.darkMode}/>
             
 
         </main>

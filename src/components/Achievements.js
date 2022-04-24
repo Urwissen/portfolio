@@ -1,8 +1,10 @@
 import React from "react";
+import AchievementCard from "./AchievementCard";
+
 export const Achievements = (props) => {
     const [profile, setProfile] = React.useState("name")
     const [isLoading, setIsLoading] = React.useState(true)
-
+    const {darkMode} = props
 
     async function fetchingData() {
         const response = await fetch("https://teamtreehouse.com/larsgessner.json")
@@ -16,19 +18,14 @@ export const Achievements = (props) => {
         fetchingData()    
     }, [])
 
-
+    console.log(profile)
     return(
-        <div className="achievements">
-            <p>First</p>
-            <p>Some Content</p>
-            {!isLoading ? 
-            <>
-            <p>{profile.name}</p>
-            <p>Total points: {profile.points.total}</p>
-            <p>JavaScript points: {profile.points.JavaScript}</p>
-            </> : <p>Loading...</p>}
+        <div className={`achievement-card-wrapper ${darkMode}`}>
             
+            <AchievementCard title="Treehouse" profile={profile} isLoading={isLoading}/>
+            <AchievementCard title="Codecademy" profile={null} isLoading={null} externalLink="https://www.codecademy.com/profiles/Urwissen"/>
+            <AchievementCard  title="Scrimba" profile={null} isLoading={null} externalLink="https://scrimba.com/certificate/u6rx3NHQ/gfrontend"/>
         </div>
-
+        
     )
 }
