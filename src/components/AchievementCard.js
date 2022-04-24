@@ -17,6 +17,7 @@ function AchievementCard(props) {
                     <p><strong>Profile:</strong> <a href="https://teamtreehouse.com/larsgessner" target="_blank" rel="noreferrer">{profile.name}</a></p>
                     <img className='profile-pic' src={profile.gravatar_url} alt="Me on treehouse"/>
                 </div>
+                <p>Front-End-Developer 🏆</p>
                 <h5>Points Total: {profile.points.total} (incl. non listet)</h5>
                 <div className='flex-row-wrap'>
                     <p className='padding-low'><i className="fab fa-js-square" title="JavaScript Points"></i> {profile.points.JavaScript}p</p>
