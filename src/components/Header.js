@@ -2,7 +2,7 @@ import React from "react"
 import ThemeSwitcher from "./ThemeSwitcher"
 
 export const Header = (props) => {
-    const [isOpen, setIsOpen] = React.useState(false)
+    /* const [isOpen, setIsOpen] = React.useState(false) */
 
     return (
         <header className={`header container ${props.darkMode}`} id="top">

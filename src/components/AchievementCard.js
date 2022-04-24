@@ -1,15 +1,14 @@
 import React from 'react'
 
 function AchievementCard(props) {
-    const {darkMode, title, profile, isLoading, externalLink} = props
+    const {darkMode, title, profile, isLoading, externalLink, image} = props
 
-    const badges = isLoading ? "loading..." :  profile ? profile.badges[Math.floor(Math.random() * (profile.badges.length -1) )] :null
+    const badges = isLoading ? "loading..." :  profile ? profile.badges[Math.floor(Math.random() * (profile.badges.length -1) )] : null
 
-    console.log(profile)
     return (
         <div className="achievements">
             <h3>{title}</h3>
-            {externalLink ? <iframe src={externalLink} title="site"></iframe> : 
+            {externalLink ? <iframe src={externalLink} title="site"></iframe> : image ? <img src={image} alt={title}/> :
             <div className='achievements-stats'>
                 
                 {!isLoading ? 
@@ -30,7 +29,7 @@ function AchievementCard(props) {
                     <p><strong>Badge:</strong> {badges.name}</p>
                     {/* Greeting to Mr. Koenig ;-) */}
                     <p><strong>Earned Date:</strong> {badges.earned_date.split("T")[0].split("-").reverse().join(".")}</p>
-                    <a href={badges.url} target="_blank" rel="noreferrer"><i class="bi bi-journal-code"></i> Learn the same</a>
+                    <a href={badges.url} target="_blank" rel="noreferrer"><i className="bi bi-journal-code"></i> Learn the same</a>
                 </div>
                 
                 </> : <p>Loading...</p>}

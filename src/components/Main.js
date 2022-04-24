@@ -19,7 +19,7 @@ export const Main = (props) => {
                     my name is  <span className="highlight">Lars</span>. A self taught <span className="highlight">front-end developer</span> from Germany. If you want to use digitization for your own <strong>benefit</strong>, <strong>chance</strong>, more <strong>profits</strong>? All possibilities can be created for you!</p> 
                     <div className="flex">
                         <button className="action-btn">hire me!</button>
-                        <button className="action-btn cv"><i class="bi bi-file-earmark-person"></i></button>
+                        <button className="action-btn cv"><i className="bi bi-file-earmark-person"></i></button>
                     </div>
                 </div>
                 
@@ -27,7 +27,7 @@ export const Main = (props) => {
             </article>
             
 
-            <h2 className="section-title">Projects</h2>
+            <h2 className="section-title">Projects <i class="bi bi-kanban-fill"></i></h2>
             <article className="projects-container">
                 
                 <ProjectCard 
@@ -78,17 +78,15 @@ export const Main = (props) => {
                     demo="https://unit-converter-eight.vercel.app"
                 />
 
-
             </article>
 
-            <h2 className="section-title">Skills</h2>
+            <h2 className="section-title">Skills <i class="bi bi-wrench-adjustable-circle-fill"></i></h2>
 
             <Skills />
 
-            <h2 className="section-title">Achievements</h2>
+            <h2 className="section-title">Milestones <i class="bi bi-trophy-fill"></i></h2>
             <Achievements darkMode={props.darkMode}/>
             
-
         </main>
     )
     
