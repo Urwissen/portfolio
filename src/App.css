@@ -689,7 +689,7 @@ article {
   top: 10vh;
   bottom: 10vh;
   background-color: black;
-  color: whitesmoke;
+  color: var(--main-white-color);
   opacity: 0.9;
   z-index: 8;
   transition: all 1s ease-in-out;
@@ -704,6 +704,9 @@ article {
   padding: 1em;
   border: none;
   border-radius: 0.25em;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: #e643f8;
 }
 
 @keyframes popup {
