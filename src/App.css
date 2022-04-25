@@ -694,6 +694,7 @@ article {
   z-index: 8;
   transition: all 1s ease-in-out;
   border-radius: 1em;
+  cursor: pointer;
 }
 
 .popup-box::after {
