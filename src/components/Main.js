@@ -46,7 +46,7 @@ export const Main = (props) => {
                 <ProjectCard 
                     image="https://live.staticflickr.com/65535/52007875353_20a20c7442_b.jpg"
                     title="Digital Business Card"
-                    description="Get a figma file and rebuild it in React"
+                    description="The challenge was to get an figma file and rebuild it in React"
                     github="https://github.com/Urwissen/digital-business-card"
                     demo="https://digital-business-card-six.vercel.app/"
                 />
@@ -62,7 +62,7 @@ export const Main = (props) => {
                 <ProjectCard 
                     image="https://live.staticflickr.com/65535/52008080819_9973ee876f_b.jpg"
                     title="Quiz Game"
-                    description="A basic quiz game using Typescript and React."
+                    description="A basic quiz game using Typescript and React. Use an API to fetch some JSON data and handle it."
                     github="https://github.com/Urwissen/quiz-game"
                     demo="https://react-typescript-quiz-game.vercel.app"
                 />
@@ -77,10 +77,10 @@ export const Main = (props) => {
 
                 <ProjectCard 
                     image="https://live.staticflickr.com/65535/52007913658_0b2ddf16fc_b.jpg"
-                    title="Portfolio 1.0"
+                    title="Portfolio BETA"
                     description="My first portfolio site. Using React, hooks & state-management, Bootstrap icons, and my lovly 3 color theme slider! All from scratch, with lots of ducktape! "
-                    github="https://github.com/Urwissen"
-                    demo="https://github.com/Urwissen"
+                    github="https://github.com/Urwissen/portfolio"
+                    demo="https://portfolio-three-tau-36.vercel.app/"
                 />
 
                 <ProjectCard 
