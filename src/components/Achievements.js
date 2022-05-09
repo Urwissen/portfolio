@@ -22,7 +22,7 @@ export const Achievements = (props) => {
     return(
         <div className={`achievement-card-wrapper ${darkMode}`}>
             
-            <AchievementCard title="Treehouse" profile={profile} isLoading={isLoading}/>
+            <AchievementCard title="Treehouse" profile={null} isLoading={null} externalLink="https://teamtreehouse.com/profiles/larsgessner"/>
             <AchievementCard title="Codecademy" profile={null} isLoading={null} externalLink="https://www.codecademy.com/profiles/Urwissen"/>
             <AchievementCard title="Scrimba" profile={null} isLoading={null}  image={img}/>
         </div>
