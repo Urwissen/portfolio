@@ -9,7 +9,7 @@ export const Achievements = (props) => {
     const url = "https://teamtreehouse.com/larsgessner.json"
 
     async function fetchingData() {
-        const response = await fetch(url)
+        const response = await fetch(url, { mode: 'no-cors'})
         const data = await response.json()
         setProfile(await data)
         setIsLoading(false)
