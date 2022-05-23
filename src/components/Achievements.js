@@ -6,7 +6,7 @@ export const Achievements = (props) => {
     const [profile, setProfile] = React.useState("name")
     const [isLoading, setIsLoading] = React.useState(true)
     const {darkMode} = props
-    const url = "https://teamtreehouse.com/larsgessner.json"
+    /* const url = "https://teamtreehouse.com/larsgessner.json"
 
     async function fetchingData() {
         const response = await fetch(url)
@@ -17,7 +17,7 @@ export const Achievements = (props) => {
 
     React.useEffect(() => {
         fetchingData()    
-    }, [])
+    }, []) */
 
     return(
         <div className={`achievement-card-wrapper ${darkMode}`}>

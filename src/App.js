@@ -3,6 +3,8 @@ import './App.css';
 import {Header} from './components/Header.js';
 import {Main} from './components/Main.js';
 import {Footer} from './components/Footer.js';
+import Confetti from 'react-confetti'
+
 
 function App() {
   const preferDarkQuery = '(prefers-color-scheme: dark)'
@@ -30,8 +32,11 @@ function App() {
           
   }
 
+  const width = document.width
+  const height = document.height
   return (
     <div className="App">
+      {darkMode === "rainbow" ? <Confetti width={width} height={height} style={{zIndex: 101}} /> : null}
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
       <Main darkMode={darkMode}/>
       <Footer darkMode={darkMode}/>
