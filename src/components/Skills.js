@@ -26,12 +26,6 @@ export const Skills = (params) => {
                 </div>
 
                 <div className="skill-card">
-                    <i className="fab fa-ts-square" aria-hidden="true"></i> 
-                    <h3>TypeScript</h3>
-                    <p><em>Typesafe to the web</em></p>  
-                </div>
-
-                <div className="skill-card">
                     <i className="fab fa-react" aria-hidden="true"></i> 
                     <h3>React</h3>
                     <p><em>scalable, fast, just the modern way</em></p>  
