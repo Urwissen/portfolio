@@ -508,6 +508,14 @@ article {
   color: #00bcd4;
 }
 
+.skill-card:hover > .fa-angular{
+  color: #e82315;
+}
+
+.skill-card:hover > .fa-cloud{
+  color: #1589e8;
+}
+
 .skill-card:hover > i .redux {
   fill: #bf00d4;
 }
