@@ -49,6 +49,12 @@ export const Skills = (params) => {
                     <p><em>state management, the central way</em></p>  
                 </div>
 
+                <div className="skill-card">
+                    <i className="fa fa-shield" aria-hidden="true"></i> 
+                    <h3>Cybersecurity</h3>
+                    <p><em>fundamentals with ISC2 CC, SC-900 and OWASP</em></p>  
+                </div>
+        
             </div>
     )    
 };
