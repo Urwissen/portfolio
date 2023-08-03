@@ -51,7 +51,7 @@ export const Skills = (params) => {
 
                 <div className="skill-card">
                     <i className="fa fa-shield" aria-hidden="true"></i> 
-                    <h3>Cybersecurity</h3>
+                    <h3>CyberSec</h3>
                     <p><em>fundamentals with ISC2 CC, SC-900 and OWASP</em></p>  
                 </div>
         
