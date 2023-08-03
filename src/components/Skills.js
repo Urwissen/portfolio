@@ -38,8 +38,8 @@ export const Skills = (params) => {
                 </div>
 
                 <div className="skill-card">
-                    <i className="fab fa-cloud" aria-hidden="true"></i> 
-                    <h3>Azure</h3>
+                    <i className="fa fa-cloud" aria-hidden="true"></i> 
+                    <h3>Microsoft Azure</h3>
                     <p><em>Certified in Azure</em></p>  
                 </div>
 
