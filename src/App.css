@@ -523,6 +523,10 @@ article {
   fill: #bf00d4;
 }
 
+.skill-card:hover > .fa-shield{
+  color: #03fc7b;
+}
+
 /* achievements */
 .achievement-card-wrapper {
   display: flex;
