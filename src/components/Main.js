@@ -29,7 +29,7 @@ export const Main = (props) => {
                     <p><span className="bio-hi">Hi there,</span>
                     <br></br>
                     <br></br>
-                    my name is  <span className="highlight">Lars</span>. A self taught <span className="highlight">front-end developer</span> from Germany. If you want to use digitization for your own <strong>benefit</strong>, <strong>chance</strong>, more <strong>profits</strong>? All possibilities can be created for you!</p> 
+                    my name is  <span className="highlight">Lars</span>. A self-taught <span className="highlight">front-end developer</span> from Germany. If you want to use digitization for your own <strong>benefit</strong>, <strong>chance</strong>, more <strong>profits</strong>? All possibilities can be created for you!</p> 
                     <div className="flex">
                         <button className="action-btn" onClick={(event) => handlePopup(event, "hire")}>hire me!</button>
                         <button className="action-btn cv" onClick={(event) => handlePopup(event, "cv")}><i className="bi bi-file-earmark-person"></i></button>
@@ -44,23 +44,23 @@ export const Main = (props) => {
             <article className="projects-container">
                 
                 <ProjectCard 
-                    image="https://live.staticflickr.com/65535/52007875353_20a20c7442_b.jpg"
+                    image="https://user-images.githubusercontent.com/17276621/152983548-bd7ba076-b699-44f9-8e88-59c0a5638550.png"
                     title="Digital Business Card"
-                    description="The challenge was to get an figma file and rebuild it in React"
+                    description="The challenge was to get a figma file and rebuild it in React"
                     github="https://github.com/Urwissen/digital-business-card"
                     demo="https://digital-business-card-six.vercel.app/"
                 />
 
                 <ProjectCard 
-                    image="https://live.staticflickr.com/65535/52006806577_3b2d6940e1_b.jpg" 
+                    image="https://user-images.githubusercontent.com/17276621/153633065-366f9859-6940-4422-9f7e-421dcbc5872b.png" 
                     title="Minimal todo app"
-                    description="Ceare a minimal todo-app with react. Using statemanagement, hooks to remove, add and highlight tasks."
+                    description="Ceare a minimal todo-app with react. Using state-management, hooks to remove, add and highlight tasks."
                     github="https://github.com/Urwissen/minimal-todo"
                     demo="https://minimal-todo-olive.vercel.app"
                 />
 
                 <ProjectCard 
-                    image="https://live.staticflickr.com/65535/52008080819_9973ee876f_b.jpg"
+                    image="https://user-images.githubusercontent.com/17276621/162696227-b3baa117-a3c4-4a05-9748-6cf17c5702c2.jpg"
                     title="Quiz Game"
                     description="A basic quiz game using Typescript and React. Use an API to fetch some JSON data and handle it."
                     github="https://github.com/Urwissen/quiz-game"
@@ -68,7 +68,7 @@ export const Main = (props) => {
                 />
 
                 <ProjectCard 
-                    image="https://live.staticflickr.com/65535/52007903508_ae790b2603_b.jpg"
+                    image="https://user-images.githubusercontent.com/17276621/154099410-491e89f0-f869-4117-8b4a-24296b167683.png"
                     title="Accessible Form"
                     description="A form project with WCAG in mind."
                     github="https://github.com/Urwissen/form-project"
@@ -76,9 +76,9 @@ export const Main = (props) => {
                 />
 
                 <ProjectCard 
-                    image="https://live.staticflickr.com/65535/52007913658_0b2ddf16fc_b.jpg"
+                    image="https://user-images.githubusercontent.com/17276621/258180536-2aad95bb-1737-4d4b-a637-f0841c18b404.png"
                     title="Portfolio BETA"
-                    description="My first portfolio site. Using React, hooks & state-management, Bootstrap icons, and my lovly 3 color theme slider! All from scratch, with lots of ducktape! "
+                    description="My first portfolio site. Using React, hooks & state management, Bootstrap icons, and my lovely 3 color theme slider! All from scratch, with lots of ducktape! "
                     github="https://github.com/Urwissen/portfolio"
                     demo="https://portfolio-three-tau-36.vercel.app/"
                 />
