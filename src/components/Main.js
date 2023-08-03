@@ -84,7 +84,7 @@ export const Main = (props) => {
                 />
 
                 <ProjectCard 
-                    image="https://live.staticflickr.com/65535/52008108314_93df243b4f_b.jpg"
+                    image="https://user-images.githubusercontent.com/17276621/157244341-12c21822-2a8d-46cd-b704-9069e0ec8ca8.jpg"
                     title="Unit Converter"
                     description="A pure vanilla javascript unit converter"
                     github="https://github.com/Urwissen/unit-converter"
