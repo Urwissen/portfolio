@@ -10,6 +10,8 @@ I did not follow mobile first on the beginning, because i try lots of new things
 
 ## Demo 👉 [Click Here](https://portfolio-three-tau-36.vercel.app) 👈
 
+![Bildschirmfoto 2023-08-03 um 18 47 39](https://github.com/Urwissen/portfolio/assets/17276621/2aad95bb-1737-4d4b-a637-f0841c18b404)
+
 
 ## Used
 
